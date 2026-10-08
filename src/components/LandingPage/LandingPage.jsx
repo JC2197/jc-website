@@ -3,7 +3,7 @@ import './LandingPage.css';
 function LandingPage() {
     const name = "Joe Conticello"
     const buttonList = ["About", "Projects", "Contact"];
-    return <div>
+    return <div className="page-wrapper">
         <h1>{name}</h1>
         <div className="button-list-wrapper">
             <div className="button-list">

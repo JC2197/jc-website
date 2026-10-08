@@ -9,6 +9,15 @@
     padding: 2rem
 }
 
+.page-wrapper {
+    min-height: 100svh;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; 
+}
+    
 button {
     justify-content: center;
     max-width: 10rem;
