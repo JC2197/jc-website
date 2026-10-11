@@ -23,9 +23,6 @@ button {
     max-width: 10rem;
     display: flex;
     background: transparent;
-    border: transparent;
-    &:hover {
-        color:  orange;
-    }
+    border: transparent
 }
 

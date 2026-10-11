@@ -1,18 +1,25 @@
+import { useState } from 'react';
 import './LandingPage.css';
+import AboutSection from './AboutSection';
+import NavigationButtons from './NavigationButtons';
 
 function LandingPage() {
+    const [currentPage, setCurrentPage] = useState("home");
     const name = "Joe Conticello"
-    const buttonList = ["About", "Projects", "Contact"];
+
     return <div className="page-wrapper">
         <h1>{name}</h1>
-        <div className="button-list-wrapper">
-            <div className="button-list">
-                {buttonList.map((label) => (
-                    <button key={label} >{label}</button>
-                ))}
-            </div>
-        </div>
+        {currentPage === "home" && (
+            <NavigationButtons
+                onAboutClick={() => setCurrentPage("about")}
+            />
+        )}
+        {currentPage === "about" && (
+            <AboutSection onBack={() => setCurrentPage("home")} />
+        )}
+
     </div>;
 }
+
 
 export default LandingPage;

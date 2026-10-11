@@ -1,7 +1,10 @@
 import LandingPage from './LandingPage/LandingPage';
-
+import ParticlesBackground from './ParticlesBackground';
 function App() {
-  return <div><LandingPage /></div>;
+  return <div>
+    <ParticlesBackground />
+    <LandingPage />
+  </div>;
 }
 
 export default App;
