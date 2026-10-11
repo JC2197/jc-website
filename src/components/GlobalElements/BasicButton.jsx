@@ -9,7 +9,7 @@ function BasicButton({ children, className = "", ...props }) {
             whileHover={{
                 scale: 1.4,
                 rotate: [0, 4, -4, 0],
-                color: "rgb(255, 140, 0)",
+                color: "rgb(255, 106, 0)",
                 transition: {
                     scale: { duration: 0.1 },
                     color: { duration: 0.1 },
