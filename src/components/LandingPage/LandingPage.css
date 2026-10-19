@@ -26,3 +26,8 @@ button {
     border: transparent
 }
 
+.name-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

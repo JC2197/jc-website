@@ -10,18 +10,20 @@ function LandingPage() {
     const name = "Joe Conticello"
 
     return <div className="page-wrapper">
-        <h1>{name}</h1>
+
         {currentPage === "home" && (
-            <NavigationButtons
-                onAboutClick={() => setCurrentPage("about")}
-                onProjectsClick={() => setCurrentPage("projects")}
-                onContactClick={() => setCurrentPage("contact")}
-            />
+            <>
+                <h1>{name}</h1>
+                <NavigationButtons
+                    onAboutClick={() => setCurrentPage("about")}
+                    onProjectsClick={() => setCurrentPage("projects")}
+                    onContactClick={() => setCurrentPage("contact")}
+                />
+            </>
         )}
         {currentPage === "about" && (
             <AboutSection onBack={() => setCurrentPage("home")} />
         )}
-
         {currentPage === "projects" && (
             <ProjectSection onBack={() => setCurrentPage("home")} />
         )}

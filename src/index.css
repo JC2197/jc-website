@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Pixel";
+  src: url("./assets/fonts/PrStart.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GeistPixel";
+  src: url("./assets/fonts/GeistPixel.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VT323";
+  src: url("./assets/fonts/VT323.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Salty";
+  src: url("./assets/fonts/Salty.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -11,8 +43,8 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: 'Geist Pixel', system-ui,  Roboto, sans-serif;
-  --heading: 'Geist Pixel', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Salty','GeistPixel', 'VT323', system-ui,  Roboto, sans-serif;
+  --heading: 'Salty','Pixel', system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
