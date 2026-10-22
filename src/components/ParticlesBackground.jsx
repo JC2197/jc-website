@@ -57,11 +57,11 @@ const particleOptions = {
                 default: "out",
                 bottom: "none"
             },
-            // trail: {
-            //     enable: true,
-            //     length: 10,
-            //     fillColor: "#ff6a00"
-            // },
+            trail: {
+                enable: true,
+                length: 10,
+                fillColor: "#ff6a00"
+            },
             attract: {
                 enable: true,
                 rotateX: 3000,

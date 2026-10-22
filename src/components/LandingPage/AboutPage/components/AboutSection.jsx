@@ -1,5 +1,5 @@
-import BasicButton from "../GlobalElements/BasicButton";
-import { about } from "../../content/about";
+import BasicButton from "../../../GlobalElements/BasicButton";
+import { about } from "../models/about";
 
 const aboutContent = about.about1;
 function AboutSection({ onBack }) {

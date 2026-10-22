@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './LandingPage.css';
-import AboutSection from './AboutSection';
+import AboutSection from './AboutPage/components/AboutSection';
 import NavigationButtons from './NavigationButtons';
 import ContactSection from './ContactSection';
-import ProjectSection from './Projects';
+import ProjectSection from './ProjectsPage/components/Projects';
 
 function LandingPage() {
     const [currentPage, setCurrentPage] = useState("home");
