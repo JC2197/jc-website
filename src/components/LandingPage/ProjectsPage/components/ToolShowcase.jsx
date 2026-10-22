@@ -1,4 +1,5 @@
-import VideoPlayer from "../../../VideoPlayer/Videoplayer";
+import VideoPlayer from "../../../VideoPlayer/VideoPlayer";
+
 export default function ToolShowcase({ tool }) {
     return (
         <div>
