@@ -7,6 +7,8 @@ export default function VideoPlayer() {
             style={{ aspectRatio: "16/9" }}
             controls
             playsInline
+            loop
+            autoPlay
             muted>
             <source src={newVideo} type="video/mp4" />
             <track
