@@ -5,9 +5,10 @@ export default function VideoPlayer() {
         <video
             width="100%"
             style={{ aspectRatio: "16/9" }}
-            controls
+            controls={false}
             playsInline
             loop
+            
             autoPlay
             muted>
             <source src={newVideo} type="video/mp4" />
