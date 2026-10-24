@@ -4,7 +4,7 @@ function BasicButton({ children, className = "", ...props }) {
     return (
         <motion.button
             type="button"
-            animate={{ scale: 1 }}
+            animate={{ scale: 1, rotate: 0 }}
             
             whileHover={{
                 scale: 1.4,
