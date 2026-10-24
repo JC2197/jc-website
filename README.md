@@ -1,5 +1,11 @@
 # React + Vite
 
+## Deployment
+
+GitHub Pages serves this app at the root of the custom domain `joeconticello.com`.
+Keep Vite's `base` set to `/` so generated asset URLs match that deployment.
+Pushing to `main` runs the build and deploys `dist` through GitHub Actions.
+
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:
