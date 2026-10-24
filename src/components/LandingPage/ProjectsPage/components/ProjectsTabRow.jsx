@@ -1,20 +1,21 @@
-
+import BasicButton from "../../../GlobalElements/BasicButton";
 
 export default function ProjectsTabRow({ activeProject, onSelect }) {
     return (
         <nav className="projects-tab-row">
-            <button
-                type="button"
+            <BasicButton
                 aria-pressed={activeProject === "heltower"}
                 onClick={() => onSelect("heltower")}
-            >Heltower</button>
+            >
+                Heltower
+            </BasicButton>
 
-            <button
-                type="button"
-                aria-pressed={activeProject === "anotherProject"}
+            <BasicButton
+                aria-pressed={activeProject === "tools"}
                 onClick={() => onSelect("tools")}
-            >Tools Showcase
-            </button>
+            >
+                Tools Showcase
+            </BasicButton>
         </nav>
-    )
+    );
 }
