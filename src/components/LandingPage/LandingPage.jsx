@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './LandingPage.css';
+import { AnimatePresence, motion } from "framer-motion";
 import AboutSection from './AboutPage/components/AboutSection';
 import NavigationButtons from './NavigationButtons';
 import ContactSection from './ContactSection';
