@@ -23,7 +23,7 @@ function LandingPage() {
                         duration: 0.65,
                         ease: [0.22, 1, 0.36, 1], 
                         }}
-                >
+                className="page">
                 {currentPage === "home" && (
                     <>
                         <h1>{name}</h1>
