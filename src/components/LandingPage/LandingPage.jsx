@@ -12,7 +12,7 @@ function LandingPage() {
 
     return <div className="page-wrapper">
 
-            <AnimatePresence mode="wait">
+            <AnimatePresence >
                 <motion.div
                     key={currentPage}
                     initial={{ y: '100vh' }}
