@@ -11,25 +11,33 @@ function LandingPage() {
 
     return <div className="page-wrapper">
 
-        {currentPage === "home" && (
-            <>
-                <h1>{name}</h1>
-                <NavigationButtons
-                    onAboutClick={() => setCurrentPage("about")}
-                    onProjectsClick={() => setCurrentPage("projects")}
-                    onContactClick={() => setCurrentPage("contact")}
-                />
-            </>
-        )}
-        {currentPage === "about" && (
-            <AboutSection onBack={() => setCurrentPage("home")} />
-        )}
-        {currentPage === "projects" && (
-            <ProjectSection onBack={() => setCurrentPage("home")} />
-        )}
-        {currentPage === "contact" && (
-            <ContactSection onBack={() => setCurrentPage("home")} />
-        )}
+            <AnimatePresence mode="wait">
+                <motion.div
+                    key={currentPage}
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{   
+                        type: "tween",
+                        duration: 0.65,
+                        ease: [0.22, 1, 0.36, 1], 
+                        }}
+                >
+                {currentPage === "home" && (
+                    <>
+                        <h1>{name}</h1>
+                        <NavigationButtons
+                            onAboutClick={() => setCurrentPage("about")}
+                            onProjectsClick={() => setCurrentPage("projects")}
+                            onContactClick={() => setCurrentPage("contact")}
+                        />
+                    </>
+                )}
+                {currentPage === "about" && <AboutSection onBack={() => setCurrentPage("home")} />}
+                {currentPage === "projects" && <ProjectSection onBack={() => setCurrentPage("home")} />}
+                {currentPage === "contact" && <ContactSection onBack={() => setCurrentPage("home")} />}
+            </motion.div>
+        </AnimatePresence>
 
     </div>;
 }
