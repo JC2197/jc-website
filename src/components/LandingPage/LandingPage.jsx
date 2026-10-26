@@ -15,9 +15,9 @@ function LandingPage() {
             <AnimatePresence mode="wait">
                 <motion.div
                     key={currentPage}
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
+                    initial={{ y: 12 }}
+                    animate={{ y: 0 }}
+                    exit={{ y: -12 }}
                     transition={{   
                         type: "tween",
                         duration: 0.65,
