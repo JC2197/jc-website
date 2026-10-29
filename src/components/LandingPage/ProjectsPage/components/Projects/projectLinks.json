@@ -1,0 +1,23 @@
+[
+  {
+    "id": "heltower",
+    "category": "games-software",
+    "label": "Heltower",
+    "icon": "/src/assets/icons/LogoArt.png",
+    "path": "/heltower"
+  },
+  {
+    "id": "tools",
+    "category": "games-software",
+    "label": "Tools Showcase",
+    "icon": "/src/assets/icons/unitylogo.png",
+    "path": "/tools"
+  },
+  {
+    "id": "king-and-heroes",
+    "category": "music",
+    "label": "King and Heroes",
+    "icon": "/favicon.svg",
+    "path": "/king-and-heroes"
+  }
+]

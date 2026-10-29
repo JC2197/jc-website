@@ -1,6 +1,5 @@
-import newVideo from './videos/newVideo.mp4';
 
-export default function VideoPlayer() {
+export default function VideoPlayer({ newVideoProp }) {
     return (
         <video
             width="100%"
@@ -11,7 +10,7 @@ export default function VideoPlayer() {
             
             autoPlay
             muted>
-            <source src={newVideo} type="video/mp4" />
+            <source src={newVideoProp} type="video/mp4" />
             <track
                 kind="subtitles"
                 src="/captions/demo.en.vtt"

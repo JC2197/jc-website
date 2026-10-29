@@ -12,17 +12,24 @@ function LandingPage() {
 
     return <div className="page-wrapper">
 
-            <AnimatePresence initial={false}>
-                <motion.div
-                    key={currentPage}
-                    initial={{ y: '100vh' }}
-                    animate={{ y: 0 }}
-                    exit={{ y: '-100vh' }}
-                    transition={{   
-                        type: "tween",
-                        duration: 0.65,
-                        ease: [0.22, 1, 0.36, 1], 
-                        }}
+        <AnimatePresence
+            initial={false}
+            custom={currentPage === "home" ? -1 : 1}>
+            <motion.div
+                key={currentPage}
+                custom={currentPage === "home" ? -1 : 1}
+                variants={{
+                    enter: direction => ({ y: `${direction * 100}vh` }),
+                    exit: direction => ({ y: `${direction * -100}vh` }),
+                }}
+                initial="enter"
+                animate={{ y: 0 }}
+                exit="exit"
+                transition={{
+                    type: "tween",
+                    duration: 0.65,
+                    ease: [0.22, 1, 0.36, 1],
+                }}
                 className="page">
                 {currentPage === "home" && (
                     <>
