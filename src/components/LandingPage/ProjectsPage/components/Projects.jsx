@@ -1,6 +1,6 @@
 import BasicButton from "../../../GlobalElements/BasicButton";
 import ClickableCard from "../../../GlobalElements/ClickableCard";
-import projectLinks from "./Projects/projectLinks.json";
+import ProjectCards from "./Projects/ProjectCards.js";
 import ProjectsTabRow from "./ProjectsTabRow";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -11,7 +11,7 @@ function ProjectSection({ onBack }) {
 
     const [activeCategory, setActiveCategory] = useState("games-software");
     const direction = activeCategory === "music" ? -1 : 1;
-    const visibleProjects = projectLinks.filter(
+    const visibleProjects = ProjectCards.filter(
         project => project.category === activeCategory
     );
     return (

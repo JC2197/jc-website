@@ -1,16 +1,19 @@
-[
+import LogoArt from "/src/assets/icons/LogoArt.png";
+import UnityLogo from "/src/assets/icons/unitylogo.png";
+
+export default [
   {
     "id": "heltower",
     "category": "games-software",
     "label": "Heltower",
-    "icon": "/src/assets/icons/LogoArt.png",
+    "icon": LogoArt,
     "path": "/heltower"
   },
   {
     "id": "tools",
     "category": "games-software",
     "label": "Tools Showcase",
-    "icon": "/src/assets/icons/unitylogo.png",
+    "icon": UnityLogo,
     "path": "/tools"
   },
   {
