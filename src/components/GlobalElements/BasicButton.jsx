@@ -7,20 +7,14 @@ function BasicButton({ children, className = "", ...props }) {
             animate={{ scale: 1, rotate: 0 }}
             
             whileHover={{
-                scale: 1.4,
-                rotate: [0, 4, -4, 0],
+                scale: 1.2,
+                rotate: [0, 1, -1, 0],
                 color: "rgb(255, 106, 0)",
                 transition: {
                     scale: { duration: 0.1 },
-                    color: { duration: 0.1 },
-                    rotate: {
-                        duration: 2,
-                        repeat: Infinity,
-                        ease: "linear"
-                    }
                 }
             }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.1 }}
             className={`basic-button ${className}`}
             {...props}
         >

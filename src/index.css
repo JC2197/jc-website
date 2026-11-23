@@ -67,7 +67,6 @@
     --text: rgb(193, 157, 120);
     --text-h: hsl(19, 100%, 49%);
     --bg: #000000;
-    --border: hsl(19, 100%, 50%);
     --code-bg: hsl(19, 100%, 50%);
     --accent: hsl(19, 100%, 50%);
     --accent-bg: rgba(192, 132, 252, 0.15);
@@ -94,11 +93,9 @@ button {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 h1,

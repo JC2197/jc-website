@@ -43,6 +43,7 @@ button {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem 1rem;
+  background: transparent;
 }
 
 .projects-page {
@@ -58,9 +59,6 @@ button {
   top: 0;
   z-index: 10;
   display: flow-root;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  border-radius: 0.75rem;
   overflow: hidden;
 }
 
