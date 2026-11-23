@@ -1,6 +1,8 @@
 import LandingPage from './LandingPage/LandingPage';
 import ParticlesBackground from './ParticlesBackground';
 import HeltowerPage from './LandingPage/ProjectsPage/components/HeltowerPage';
+import KingsAndHeroesPage from './LandingPage/ProjectsPage/components/KingsAndHeroesPage';
+
 import { Link } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
@@ -11,6 +13,12 @@ function App() {
       <Route path="/heltower" element={
         <main className="center-column">
           <HeltowerPage />
+          <Link to="/">Home</Link>
+        </main>
+      } />
+      <Route path="/kings-and-heroes" element={
+        <main className="center-column">
+          <KingsAndHeroesPage />
           <Link to="/">Home</Link>
         </main>
       } />

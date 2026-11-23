@@ -17,10 +17,10 @@ export default [
     "path": "/tools"
   },
   {
-    "id": "king-and-heroes",
+    "id": "kings-and-heroes",
     "category": "music",
-    "label": "King and Heroes",
+    "label": "Kings and Heroes",
     "icon": "/favicon.svg",
-    "path": "/king-and-heroes"
+    "path": "/kings-and-heroes"
   }
 ]

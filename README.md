@@ -6,6 +6,12 @@ GitHub Pages serves this app at the root of the custom domain `joeconticello.com
 Keep Vite's `base` set to `/` so generated asset URLs match that deployment.
 Pushing to `main` runs the build and deploys `dist` through GitHub Actions.
 
+## Video files
+
+MP4 files are stored using Git LFS. Install Git LFS and run `git lfs install`
+before cloning or working with this repository. If you already cloned it, run
+`git lfs pull` to download the video files.
+
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:
